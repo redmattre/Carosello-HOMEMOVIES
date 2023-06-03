@@ -1,9 +1,13 @@
-//ScreenSize
-window.onload = function() 
-{
-  send(screen.height);
-  send(screen.width);
-}
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////SQUARES//////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+var squares = [
+  document.querySelector(".square-1"),
+  document.querySelector(".square-2"),
+  document.querySelector(".square-3"),
+  document.querySelector(".square-4")
+];
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////GESTURE-RECOGN///////////////////////////////////////////////
@@ -24,32 +28,64 @@ manager.on("swipeleft", function(event) {
   var gestureSpeed = event.velocityX;
   gestureSpeed = scaleValue(Math.abs(gestureSpeed), 0, 10, 600, 120);
   send("swipeleft " + gestureSpeed);
-  rotateCube('left');
 });
 
 manager.on("swiperight", function(event) {
   var gestureSpeed = event.velocityX;
   gestureSpeed = scaleValue(Math.abs(gestureSpeed), 0, 10, 600, 120);
   send("swiperight " + gestureSpeed);
-  rotateCube('right');
-});
-
-manager.on("swipeup", function(event) {
-  var gestureSpeed = event.velocityY;
-  gestureSpeed = scaleValue(Math.abs(gestureSpeed), 0, 10, 600, 120);
-  rotateCube('down');
-  send("swipedown " + gestureSpeed);
-});
-
-manager.on("swipedown ", function(event) {
-  var gestureSpeed = event.velocityY;
-  gestureSpeed = scaleValue(Math.abs(gestureSpeed), 0, 10, 600, 120);
-  rotateCube('up');
-  send("swipeup " + gestureSpeed);
 });
 
 manager.on("doubletap", function(event) {
   send("doubletap");
+});
+
+manager.on("swipedown", function(event) {
+  var gestureSpeed = event.velocityY;
+  gestureSpeed = scaleValue(Math.abs(gestureSpeed), 0, 10, 600, 120);
+
+  send("swipeup " + gestureSpeed);
+
+  // Reset the square elements to their original positions and opacity
+  squares[0].style.opacity = "0.4";
+  squares[0].style.transform = "translate(0, -21vh)";
+  squares[0].style.scale = "96%";
+  squares[1].style.opacity = "1";
+  squares[1].style.transform = "translate(0, 0)";
+  squares[1].style.scale = "100%";
+  squares[2].style.opacity = "0.4";
+  squares[2].style.transform = "translate(0, 21vh)";
+  squares[2].style.scale = "96%";
+  squares[3].style.opacity = "0";
+  squares[3].style.transform = "translate(0, -39vh)";
+  squares[3].style.scale = "96%";
+
+  // Update the array order
+  squares.unshift(squares.pop());
+});
+
+manager.on("swipeup ", function(event) {
+  var gestureSpeed = event.velocityY;
+  gestureSpeed = scaleValue(Math.abs(gestureSpeed), 0, 10, 600, 120);
+  
+  send("swipedown " + gestureSpeed);
+
+  // Animate the squares by changing their properties directly
+  squares[0].style.opacity = "1";
+  squares[0].style.transform = "translate(0, 0)";
+  squares[0].style.scale = "100%";
+  squares[1].style.opacity = "0.4";
+  squares[1].style.transform = "translate(0, 21vh)";
+  squares[1].style.scale = "96%";
+  squares[2].style.opacity = "0";
+  squares[2].style.transform = "translate(0, -49vh)";
+  squares[2].style.scale = "96%";
+  squares[3].style.opacity = "0.4";
+  squares[3].style.transform = "translate(0, -21vh)";
+  squares[3].style.scale = "96%";
+
+  // Update the array order
+  squares.push(squares.shift());
 });
 
 function scaleValue(value, minValue, maxValue, scaledMin, scaledMax) 
@@ -68,73 +104,11 @@ function scaleValue(value, minValue, maxValue, scaledMin, scaledMax)
   return scaledValue;
 }
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////CUBE-BEHAVIOUR///////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-//cube variables
-var cube = $('.cube');
-var currentFace = 'front';
-
-//current rotation state
-var currentRotation = {
-  x: 0,
-  y: 0,
-  z: 0
-};
-
-//ruota il cubo
-function rotateCube(direction) {
-  // Update the current rotation state based on the swipe direction
-  switch (direction) {
-    case 'left':
-      currentRotation.y -= 90;
-      break;
-    case 'right':
-      currentRotation.y += 90;
-      break;
-    case 'up':
-      currentRotation.x -= 90;
-      break;
-    case 'down':
-      currentRotation.x += 90;
-      break;
-  }
-
-  // Rotate the cube
-  cube.css('transform', 'rotateX(' + currentRotation.x + 'deg) rotateY(' + currentRotation.y + 'deg) rotateZ(' + currentRotation.z + 'deg)');
-
-  // Update the current face based on the new rotation state
-  currentFace = getCurrentFace();
-}
-
-//helper function to get the current visible face of the cube
-function getCurrentFace() {
-  var faces = ['front', 'back', 'left', 'right', 'top', 'bottom'];
-  var faceIndex = Math.round(currentRotation.y / 90) % 4;
-  if (faceIndex < 0) {
-    faceIndex += 4;
-  }
-  if (currentRotation.x === -90) {
-    return 'top';
-  } else if (currentRotation.x === 90) {
-    return 'bottom';
-  } else if (faceIndex === 0) {
-    return 'front';
-  } else if (faceIndex === 1) {
-    return 'right';
-  } else if (faceIndex === 2) {
-    return 'back';
-  } else if (faceIndex === 3) {
-    return 'left';
-  }
-}
-
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////TICKER-BEHAVIOUR/////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
+/*
 
 jQuery(function ($) {
 
@@ -207,6 +181,9 @@ jQuery(function ($) {
 
   start_marquee ();
 });
+*/
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////WEBSOCKET-BEHAVIOUR//////////////////////////////////////////
