@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 430.0, 339.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Public Pixel",
 					"fontsize" : 7.0,
 					"id" : "obj-46",
@@ -49,7 +61,7 @@
 					"patching_rect" : [ 344.622411333333275, 862.0, 131.0, 13.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 174.0, 302.0, 86.0, 20.0 ],
+					"presentation_rect" : [ 174.0, 302.0, 92.0, 20.0 ],
 					"text" : "displaylink (mac)"
 				}
 
@@ -167,7 +179,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 315.0, 377.0, 51.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "fps auto"
 				}
 
@@ -911,6 +922,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 938.0, 451.0, 355.0, 373.0 ],
+		"rect" : [ 937.0, 451.0, 355.0, 373.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -94,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.5, 297.0, 153.0, 35.0 ],
-					"text" : "stdout \"disconnect NLFe-HL4qvjjNOubAAAt\""
+					"text" : "terminated error dictionary u221010406"
 				}
 
 			}
