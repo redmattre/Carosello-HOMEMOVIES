@@ -88,13 +88,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.5, 297.0, 153.0, 49.0 ],
-					"text" : "stdout \"cmd H-D9mXEcw4HJbXjSAAAJ swipedown 574\""
+					"patching_rect" : [ 14.5, 297.0, 153.0, 35.0 ],
+					"text" : "stdout \"disconnect NLFe-HL4qvjjNOubAAAt\""
 				}
 
 			}
@@ -286,70 +286,77 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Algoritmo_2_2.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CidLinkClient.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max (proper)/patchers",
-				"patcherrelativepath" : "../../CidLink For Max (proper)/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CidLinkMaxClient.js",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max (proper)/javascript",
-				"patcherrelativepath" : "../../CidLink For Max (proper)/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CidLinkMaxServer.js",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max (proper)/javascript",
-				"patcherrelativepath" : "../../CidLink For Max (proper)/javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CidLinkServer.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max (proper)/patchers",
-				"patcherrelativepath" : "../../CidLink For Max (proper)/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "algo_new_vid_caro_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "algoritmoScegli_1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audiosys.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audiovisual_flux_generic_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "calcoloni_1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "decoder_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -362,21 +369,21 @@
 			}
 , 			{
 				"name" : "folderSystem_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keysystem_1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "main_base_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -395,7 +402,7 @@
 			}
 , 			{
 				"name" : "texture_reader_1.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/CidLink For Max Tesi/extras",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
