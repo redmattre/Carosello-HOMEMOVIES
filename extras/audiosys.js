@@ -88,6 +88,57 @@ function countKeywords()
     
 }
 
+//da qui in poi alcuni numeri sono hardcoded (per esempio la cosa dei 2 tag) sopra sono parametrici
+
+function getTrack() 
+{
+    var firstTwoIndexes = getRandomIndicesByPairs(keywordCounts); //questo mi dovrebbe dare come risultato un array di due numeri che sono il vero o falso dei primi due indici
+    //post("gesture or texture?: " + stampa + "\n");
+
+    //qui c'è da costruire tutto il pippone per le altre caratteristiche (spettro, dinamica);
+
+    
+
+}
+
+var totalWeight = screens;
+
+function getRandomIndicesByPairs(inputArray) 
+{
+    var resultArray = [];
+    for (var i = 0; i < inputArray.length; i += 2) {
+      var weight1 = inputArray[i];
+      var weight2 = inputArray[i + 1];
+      var totalWeight = weight1 + weight2;
+  
+      var randomValue = Math.random() * totalWeight;
+      var selectedIndex;
+      if (randomValue < weight1) {
+        selectedIndex = i;
+      } else {
+        selectedIndex = i + 1;
+      }
+  
+      resultArray.push(selectedIndex);
+    }
+
+    var keysArray = [];
+
+    for (var j = 0; j < resultArray.length; j++) 
+    {
+        keysArray.push(keywords[resultArray[j]]);
+    }
+
+    if (resultArray[0]) 
+    {
+        keysArray.splice(1, 1);
+    } else {
+        keysArray.splice(2, 1);
+    }
+  
+    return keysArray;
+}  
+
 function vision() 
 {
     post("video attivi: " + activeVids + "\n");
