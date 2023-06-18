@@ -8,12 +8,12 @@ var keywords = ["gesture", "texture", "small", "big", "deep", "sfondo"];
 var keywordCounts = [];
 var activeVids = [];
 
-var slot0 = [];
-var slot1 = [];
-var slot2 = [];
-var slot3 = [];
-var slot4 = [];
-var slot5 = [];
+var vslot0 = [];
+var vslot1 = [];
+var vslot2 = [];
+var vslot3 = [];
+var vslot4 = [];
+var vslot5 = [];
 
 function loadtoActiveVids() 
 {
@@ -27,37 +27,44 @@ function loadtoActiveVids()
     switch (inlet) 
     {
         case 0:
-            slot0 = [];
-            slot0 = temporary;
+            vslot0 = [];
+            vslot0 = temporary;
             break;
         case 1:
-            slot1 = [];
-            slot1 = temporary;
+            vslot1 = [];
+            vslot1 = temporary;
             break;
         case 2:
-            slot2 = [];
-            slot2 = temporary;
+            vslot2 = [];
+            vslot2 = temporary;
             break;
         case 3:
-            slot3 = [];
-            slot3 = temporary;
+            vslot3 = [];
+            vslot3 = temporary;
             break;
         case 4:
-            slot4 = [];
-            slot4 = temporary;
+            vslot4 = [];
+            vslot4 = temporary;
             break;
         case 5:
-            slot5 = [];
-            slot5 = temporary;
+            vslot5 = [];
+            vslot5 = temporary;
             break;
     }
 
     activeVids = [];
-    activeVids = activeVids.concat(slot0, slot1, slot2, slot3, slot4, slot5);
+    activeVids = activeVids.concat(vslot0, vslot1, vslot2, vslot3, vslot4, vslot5);
 
-    post("sono andato avanti" + "\n");
+    //post("sono andato avanti" + "\n");
 
     countKeywords();
+
+    checkEquilibrium();
+    //se è cambiato l'equilibrio prendi una nuova traccia altrimenti niente
+    if (equilibrioTF) 
+    {
+        getTrack();
+    }
 
     outlet(0, keywordCounts);
 }
@@ -88,17 +95,148 @@ function countKeywords()
     
 }
 
-//da qui in poi alcuni numeri sono hardcoded (per esempio la cosa dei 2 tag) sopra sono parametrici
+/*
+con questa configurazine il video cambia anche se sono uguali (equilibrio = 2), 
+potrebbe essere troppo spesso ma non per forza, nel caso basta aggiungere una percentuale 
+all'assegnazione del true or false quando sono uguali (tipo 50 e 50 o una custom).
+*/
+
+var equilibrio;
+var equilibrioTF = false;
+
+function checkEquilibrium() 
+{
+
+    var storeToConfront = equilibrio;
+    var gestures = keywordCounts[0];
+    var textures = keywordCounts[1];
+    post("equilibrio prima del check = " + storeToConfront + "\n");
+    post("numero di gesture = " + gestures + "\n");
+    post("numero di texture = " + textures + "\n");
+
+    if (gestures > textures) 
+    {
+        equilibrio = 0;
+        if (storeToConfront != equilibrio) 
+        {
+            equilibrioTF = true;
+        } else {
+            equilibrioTF = false;
+        }
+
+        post("equilibrio dopo il check = " + equilibrio + "\n");
+
+    } else if (gestures < textures) {
+        equilibrio = 1;
+        if (storeToConfront != equilibrio) 
+        {
+            equilibrioTF = true;
+        } else {
+            equilibrioTF = false;
+        }
+
+        post("equilibrio dopo il check = " + equilibrio + "\n");
+
+    } else {
+        equilibrio = 2;
+        equilibrioTF = true;
+
+        post("equilibrio dopo il check = " + equilibrio + "\n");
+
+    }
+
+
+}
+
+//da qui in poi alcuni numeri sono hardcoded (per esempio la cosa dei 2 tag) sopra sono parametrici (ma anche per forza perchè ho deciso di mettere questa cosa degli slot)
+
+var spectrum_ = [];
+var dynamics_ = [];
+var dynamics = ["forte", "piano"]; //forte e piano (f, p)
+var spectrum = ["bright", "dark"]; //dark e bright (b, d)
+var numberOfTracks = 4; //costante che si può prendere da fuori
+
+function mixAlgo() 
+{
+    var dynamicsSum = dynamics_.reduce(add, 0);
+  
+    if (dynamics_.length >= numberOfTracks) {
+      if (dynamicsSum > numberOfTracks / 2) {
+        for (var i = 0; i < dynamics_.length; i++) {
+          if (dynamics_[i] == 1) {
+            dynamics_.splice(i, 1);
+          }
+        }
+      } else {
+        for (var i = 0; i < dynamics_.length; i++) {
+          if (dynamics_[i] == 0) {
+            dynamics_.splice(i, 1);
+          }
+        }
+      }
+    }
+  
+    if (dynamicsSum == numberOfTracks - 1) {
+      dynamics_.push(0);
+    } else {
+      var binRandom = Math.floor(Math.random() * 2); // 0 or 1
+      dynamics_.push(binRandom);
+    }
+  
+    var spectrumSum = spectrum_.reduce(add, 0);
+  
+    if (spectrum_.length >= numberOfTracks) {
+      if (spectrumSum > numberOfTracks / 2) {
+        for (var i = 0; i < spectrum_.length; i++) {
+          if (spectrum_[i] == 1) {
+            spectrum_.splice(i, 1);
+          }
+        }
+      } else {
+        for (var i = 0; i < spectrum_.length; i++) {
+          if (spectrum_[i] == 0) {
+            spectrum_.splice(i, 1);
+          }
+        }
+      }
+    }
+  
+    if (spectrumSum == numberOfTracks - 1) {
+      spectrum_.push(0);
+    } else {
+      var binRandom = Math.floor(Math.random() * 2); // 0 or 1
+      spectrum_.push(binRandom);
+    }
+  
+    var dynamicsStrings = [];
+    var spectrumStrings = [];
+  
+    for (var i = 0; i < dynamics_.length; i++) {
+      dynamicsStrings.push(dynamics[dynamics_[i]]);
+    }
+  
+    for (var i = 0; i < spectrum_.length; i++) {
+      spectrumStrings.push(spectrum[spectrum_[i]]);
+    }
+
+    //post("quante tracce = " + spectrum_.length + " " + dynamics_.length + "\n");
+  
+    post("mix balance: " + dynamicsStrings + " " + spectrumStrings + "\n");
+
+}
 
 function getTrack() 
 {
-    var firstTwoIndexes = getRandomIndicesByPairs(keywordCounts); //questo mi dovrebbe dare come risultato un array di due numeri che sono il vero o falso dei primi due indici
-    //post("gesture or texture?: " + stampa + "\n");
+    var mood = getRandomIndicesByPairs(keywordCounts);
+    var mix = mixAlgo();
 
-    //qui c'è da costruire tutto il pippone per le altre caratteristiche (spettro, dinamica);
+    //hai un array con quali caratteristiche dovrebbero avere le 4 tracce quindi devi prendere in base a quello
+}
+  
 
-    
-
+function add(accumulator, a) 
+{
+    return accumulator + a;
 }
 
 var totalWeight = screens;
@@ -151,12 +289,12 @@ function vision()
     post("deep = " + keywordCounts[4] + "\n");
     post("sfondo = " + keywordCounts[5] + "\n");
 
-    post("schermo 1 = " + slot0 + "\n");
-    post("schermo 2 = " + slot1 + "\n");
-    post("schermo 3 = " + slot2 + "\n");
-    post("schermo 4 = " + slot3 + "\n");
-    post("schermo 5 = " + slot4 + "\n");
-    post("schermo 6 = " + slot5 + "\n");
+    post("schermo 1 = " + vslot0 + "\n");
+    post("schermo 2 = " + vslot1 + "\n");
+    post("schermo 3 = " + vslot2 + "\n");
+    post("schermo 4 = " + vslot3 + "\n");
+    post("schermo 5 = " + vslot4 + "\n");
+    post("schermo 6 = " + vslot5 + "\n");
 }
 
 function reset() 
@@ -164,12 +302,12 @@ function reset()
     keywordCounts = [];
     activeVids = [];
 
-    slot0 = [];
-    slot1 = [];
-    slot2 = [];
-    slot3 = [];
-    slot4 = [];
-    slot5 = [];
+    vslot0 = [];
+    vslot1 = [];
+    vslot2 = [];
+    vslot3 = [];
+    vslot4 = [];
+    vslot5 = [];
 
     countKeywords();
 
