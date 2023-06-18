@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 162.0, 473.0, 647.0, 354.0 ],
+		"rect" : [ 402.0, 228.0, 647.0, 611.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 204.0, 581.0, 74.0, 22.0 ],
+					"text" : "audioengine"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "newobj",
@@ -594,7 +605,7 @@
 					"outlettype" : [ "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 315.0, 77.0, 217.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 283.0, 16.0, 350.0, 293.0 ],
+					"presentation_rect" : [ 283.0, 16.0, 350.0, 586.0 ],
 					"viewvisibility" : 1
 				}
 

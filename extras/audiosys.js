@@ -1,4 +1,5 @@
 autowatch = 1;
+outlets = 2;
 
 var tracks = jsarguments[1]; //con quante tracce funziona il sistema
 var tags = jsarguments[2]; //quanti tag per il suono
@@ -101,6 +102,7 @@ potrebbe essere troppo spesso ma non per forza, nel caso basta aggiungere una pe
 all'assegnazione del true or false quando sono uguali (tipo 50 e 50 o una custom).
 */
 
+
 var equilibrio;
 var equilibrioTF = false;
 
@@ -148,6 +150,7 @@ function checkEquilibrium()
 
 }
 
+
 //da qui in poi alcuni numeri sono hardcoded (per esempio la cosa dei 2 tag) sopra sono parametrici (ma anche per forza perchè ho deciso di mettere questa cosa degli slot)
 
 var spectrum_ = [];
@@ -156,6 +159,7 @@ var dynamics = ["forte", "piano"]; //forte e piano (f, p)
 var spectrum = ["bright", "dark"]; //dark e bright (b, d)
 var numberOfTracks = 4; //costante che si può prendere da fuori
 
+/*
 function mixAlgo() 
 {
     var dynamicsSum = dynamics_.reduce(add, 0);
@@ -224,44 +228,54 @@ function mixAlgo()
     post("mix balance: " + dynamicsStrings + " " + spectrumStrings + "\n");
 
 }
+*/
 
-var outputArray = [];
+//var outputArray = [];
+var counter = 0;
+var mixDynamics = [];
+var mixSpectrum = [];
 
-function getTrack() {
-  var mood = getRandomIndicesByPairs(keywordCounts);
-  var outing = [];
-  mixAlgo();
+function getTrack() 
+{
+    
+    if (counter < 4) 
+    {
+        counter++;
+    } else {
+        counter = 0;
+    }
 
-  var fourNumberArray = dynamics_;
+    var mood = getRandomIndicesByPairs(keywordCounts);
 
-  var output = calculateOutput(fourNumberArray);
+    //0 o 1
+    var binRandom1 = Math.floor(Math.random() * 2);
+    mixDynamics.push(binRandom1);
+    var binRandom2 = Math.floor(Math.random() * 2);
+    mixSpectrum.push(binRandom2);
+    
 
-  // Create the output array item as a single element
-  var outputArrayItem = [mood[0], mood[1], output];
+    binRandom1 = dynamics[binRandom1];
+    binRandom2 = spectrum[binRandom2];
 
-  // Concatenate the outputArrayItem to the outputArray
-  outputArray = outputArray.concat(outputArrayItem);
+    var output = [counter, mood[0], mood[1], binRandom1, binRandom2];
 
-  // Split the outputArray into groups of three elements
-  var splitOutputArray = [];
-  for (var i = 0; i < outputArray.length; i += 3) {
-    splitOutputArray = splitOutputArray.concat(outputArray.slice(i, i + 3));
-  }
+    if (mixDynamics.reduce(add, 0) >= 3) 
+    {
+        //flip everything the other way
+    }
 
-  // ... Process the splitOutputArray or use it as needed ...
+    if (mixSpectrum.reduce(add, 0) >= 3) 
+    {
+        //flip everything the other way (quindi sparane quattro?)
+    }
 
-  post(splitOutputArray);
-  // hai un array con quali caratteristiche dovrebbero avere le 4 tracce quindi devi prendere in base a quello
+    var output = [counter, mood[0], mood[1], binRandom1, binRandom2]; //da distribuire
+
+    outlet(1, output);
+    outlet(1, "gesture");
+
+    // hai un array con quali caratteristiche dovrebbero avere le 4 tracce quindi devi prendere in base a quello
 }
-
-function calculateOutput(fourNumberArray) {
-  var sum = 0;
-  for (var i = 0; i < fourNumberArray.length; i++) {
-    sum += fourNumberArray[i];
-  }
-  return sum % 2; // Returns either 0 or 1 based on the sum
-}
-
 
 function add(accumulator, a) 
 {
