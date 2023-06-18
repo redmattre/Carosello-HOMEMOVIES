@@ -94,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.5, 297.0, 153.0, 35.0 ],
-					"text" : "terminated error dictionary u221010406"
+					"text" : "terminated error dictionary u274003410"
 				}
 
 			}

@@ -225,14 +225,43 @@ function mixAlgo()
 
 }
 
-function getTrack() 
-{
-    var mood = getRandomIndicesByPairs(keywordCounts);
-    var mix = mixAlgo();
+var outputArray = [];
 
-    //hai un array con quali caratteristiche dovrebbero avere le 4 tracce quindi devi prendere in base a quello
+function getTrack() {
+  var mood = getRandomIndicesByPairs(keywordCounts);
+  var outing = [];
+  mixAlgo();
+
+  var fourNumberArray = dynamics_;
+
+  var output = calculateOutput(fourNumberArray);
+
+  // Create the output array item as a single element
+  var outputArrayItem = [mood[0], mood[1], output];
+
+  // Concatenate the outputArrayItem to the outputArray
+  outputArray = outputArray.concat(outputArrayItem);
+
+  // Split the outputArray into groups of three elements
+  var splitOutputArray = [];
+  for (var i = 0; i < outputArray.length; i += 3) {
+    splitOutputArray = splitOutputArray.concat(outputArray.slice(i, i + 3));
+  }
+
+  // ... Process the splitOutputArray or use it as needed ...
+
+  post(splitOutputArray);
+  // hai un array con quali caratteristiche dovrebbero avere le 4 tracce quindi devi prendere in base a quello
 }
-  
+
+function calculateOutput(fourNumberArray) {
+  var sum = 0;
+  for (var i = 0; i < fourNumberArray.length; i++) {
+    sum += fourNumberArray[i];
+  }
+  return sum % 2; // Returns either 0 or 1 based on the sum
+}
+
 
 function add(accumulator, a) 
 {
