@@ -16,7 +16,7 @@ var vslot3 = [];
 var vslot4 = [];
 var vslot5 = [];
 
-function loadtoActiveVids() 
+function loadtoActiveVids() //funzione che viene chiamata ad ogni nuova gesture
 {
 
     var temporary = [];
@@ -68,6 +68,7 @@ function loadtoActiveVids()
     }
 
     outlet(0, keywordCounts);
+    outlet(1, "gesture"); //butta fuori ogni volta che c'è una gesture
 }
 
 function countKeywords() 
@@ -235,7 +236,7 @@ var counter = 0;
 var mixDynamics = [];
 var mixSpectrum = [];
 
-function getTrack() 
+function getTrack() //funzione chiamata ogni volta che serve una nuova traccia
 {
     
     if (counter < 4) 
@@ -272,7 +273,6 @@ function getTrack()
     var output = [counter, mood[0], mood[1], binRandom1, binRandom2]; //da distribuire
 
     outlet(1, output);
-    outlet(1, "gesture");
 
     // hai un array con quali caratteristiche dovrebbero avere le 4 tracce quindi devi prendere in base a quello
 }

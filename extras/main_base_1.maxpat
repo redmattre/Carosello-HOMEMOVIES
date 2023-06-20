@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 402.0, 228.0, 647.0, 611.0 ],
+		"rect" : [ 402.0, 228.0, 916.0, 611.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 204.0, 581.0, 74.0, 22.0 ],
+					"patching_rect" : [ 120.5, 601.0, 74.0, 22.0 ],
 					"text" : "audioengine"
 				}
 
@@ -714,7 +714,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -998,6 +998,111 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-5::obj-12" : [ "live.text", "live.text", 0 ],
+			"obj-5::obj-13" : [ "live.text[1]", "live.text", 0 ],
+			"obj-5::obj-15" : [ "live.text[2]", "live.text", 0 ],
+			"obj-5::obj-61" : [ "live.text[6]", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "Algoritmo_2_2.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "algo_new_vid_caro_1.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "algoritmoScegli_1.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audioengine.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audiosys.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audiovisual_flux_generic_1.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "calcoloni_1.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "decoder_1.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "folderSystem_1.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "keysystem_1.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pulltrack.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "texture_reader_1.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "trackSelector.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
