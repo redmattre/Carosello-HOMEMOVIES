@@ -232,19 +232,20 @@ function mixAlgo()
 */
 
 //var outputArray = [];
-var counter = 0;
+//var counter = 0;
 var mixDynamics = [];
 var mixSpectrum = [];
 
 function getTrack() //funzione chiamata ogni volta che serve una nuova traccia
 {
-    
-    if (counter < 4) 
+    /*
+    if (counter < 3) 
     {
         counter++;
     } else {
         counter = 0;
     }
+    */
 
     var mood = getRandomIndicesByPairs(keywordCounts);
 
@@ -258,7 +259,7 @@ function getTrack() //funzione chiamata ogni volta che serve una nuova traccia
     binRandom1 = dynamics[binRandom1];
     binRandom2 = spectrum[binRandom2];
 
-    var output = [counter, mood[0], mood[1], binRandom1, binRandom2];
+    var output = [mood[0], mood[1], binRandom1, binRandom2];
 
     if (mixDynamics.reduce(add, 0) >= 3) 
     {
@@ -270,7 +271,7 @@ function getTrack() //funzione chiamata ogni volta che serve una nuova traccia
         //flip everything the other way (quindi sparane quattro?)
     }
 
-    var output = [counter, mood[0], mood[1], binRandom1, binRandom2]; //da distribuire
+    var output = [mood[0], mood[1], binRandom1, binRandom2]; //da distribuire
 
     outlet(1, output);
 
