@@ -88,13 +88,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.5, 297.0, 153.0, 35.0 ],
-					"text" : "terminated error dictionary u294006521"
+					"patching_rect" : [ 14.5, 297.0, 153.0, 49.0 ],
+					"text" : "stdout \"disconnect 2OpPQJUrPFKHG5xLAAAc\""
 				}
 
 			}
@@ -362,6 +362,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "convxfadeb.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "decoder_1.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
@@ -398,6 +405,13 @@
 , 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pista.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
