@@ -68,7 +68,7 @@ function loadtoActiveVids() //funzione che viene chiamata ad ogni nuova gesture
     }
 
     outlet(0, keywordCounts);
-    outlet(1, "gesture"); //butta fuori ogni volta che c'è una gesture
+    outlet(1, "trig"); //butta fuori ogni volta che c'è una gesture
 }
 
 function countKeywords() 

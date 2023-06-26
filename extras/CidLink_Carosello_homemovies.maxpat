@@ -88,13 +88,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.5, 297.0, 153.0, 49.0 ],
-					"text" : "stdout \"disconnect 2OpPQJUrPFKHG5xLAAAc\""
+					"patching_rect" : [ 14.5, 297.0, 153.0, 35.0 ],
+					"text" : "stdout \"disconnect jikWu4mXd7_3LEH-AAAL\""
 				}
 
 			}
@@ -273,11 +273,27 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-5::obj-49::obj-43" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-5::obj-5::obj-12" : [ "live.text", "live.text", 0 ],
 			"obj-5::obj-5::obj-13" : [ "live.text[1]", "live.text", 0 ],
 			"obj-5::obj-5::obj-15" : [ "live.text[2]", "live.text", 0 ],
 			"obj-5::obj-5::obj-61" : [ "live.text[6]", "live.text", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-5::obj-49::obj-43" : 				{
+					"parameter_initial" : 30,
+					"parameter_initial_enable" : 1,
+					"parameter_invisible" : 0,
+					"parameter_longname" : "live.numbox",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ 0, 100 ],
+					"parameter_shortname" : "live.numbox",
+					"parameter_type" : 1,
+					"parameter_unitstyle" : 5
+				}
 
 			}
 ,
@@ -355,6 +371,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "bilinearInterpolation.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "calcoloni_1.js",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
@@ -385,6 +408,13 @@
 				"name" : "folderSystem_1.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "interpolationLine.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras/forte_bright",
+				"patcherrelativepath" : "./forte_bright",
 				"type" : "JSON",
 				"implicit" : 1
 			}
