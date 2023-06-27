@@ -24,18 +24,45 @@ html, body {
   opacity: .1;
 }
 
+.refresh 
+{
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  margin: 0 auto;
+  background-color: black;
+  border: none;
+  color: black;
+  width: 5rem;
+  height: 5rem;
+  z-index: 9998;
+}
+
+.refreshIcon 
+{
+  position: absolute;
+  right: 1rem;
+  bottom: 0px;
+  pointer-events: none;
+  margin: 0 auto;
+  color: white;
+  font-size: 3.5rem;
+  z-index: 9999;
+}
+
 /*strips//////////////////////////////////////////////////////////////////*/
 
+/*
 .strippone {
   width: 100%;
   margin: 0 auto;
   position: absolute;
   top: 2%;
   overflow: hidden;
-  color: rgb(72, 0, 255);
+  color: rgba(255, 255, 255, 0.229);
   text-shadow: 0 0 10px rgba(229, 241, 135, 0.63), 0 0 18px rgba(252, 255, 194, 0.339);
   font-family: 'Orbitron';
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .strippino {
@@ -44,11 +71,12 @@ html, body {
   position: absolute;
   bottom: 2%;
   overflow: hidden;
-  color: rgb(72, 0, 255);
+  color: rgba(255, 255, 255, 0.229);
   text-shadow: 0 0 10px rgba(229, 241, 135, 0.63), 0 0 18px rgba(252, 255, 194, 0.339);
   font-family: 'Orbitron';
-  font-size: 2em;
+  font-size: 1.5em;
 }
+*/
 
 /*diapos//////////////////////////////////////////////////////////////////*/
 
@@ -57,8 +85,8 @@ html, body {
   height: 18vh;
   position: absolute;
   background-color: rgba(254, 243, 228, 0);
-  border-radius: 40px;
-  border: 10px solid white;
+  border-radius: 1.5rem;
+  border: 0.25rem solid white;
   box-shadow: 0px 10px 15px rgba(194, 194, 194, 0.362);
   pointer-events: none;
 }
