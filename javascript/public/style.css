@@ -30,7 +30,7 @@ html, body {
   right: 1rem;
   bottom: 1rem;
   margin: 0 auto;
-  background-color: black;
+  background-color: transparent;
   border: none;
   color: black;
   width: 5rem;
@@ -42,7 +42,7 @@ html, body {
 {
   position: absolute;
   right: 1rem;
-  bottom: 0px;
+  bottom: 2rem;
   pointer-events: none;
   margin: 0 auto;
   color: white;

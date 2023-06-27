@@ -48,6 +48,7 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
+							"major" : 8,
 							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x64",

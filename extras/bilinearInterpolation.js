@@ -1,7 +1,11 @@
 autowatch = 1;
 
-/*timestretch (da 0.5 a 1.5), (pitch da -50 a 50) => forse sono un po' too much (i valori andranno tarati)
+/*
+timestretch (da 0.5 a 1.5), (pitch da -50 a 50) => forse sono un po' too much (i valori andranno tarati)
 fadetime (da 1000 a 30000) => poco 1 s di transizione
+specGate (da 0. a 60.)
+randPhase (da -5 0 a 5) => per i due effetti capire se mettere dei gate out perchè non possono essere
+sempre engaged and interpolated
 */
 
 function bilinearInterpolation(x, y) 
