@@ -197,7 +197,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 744.5, 79.0, 68.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 158.5, 331.0, 68.0, 18.0 ],
+					"presentation_rect" : [ 245.0, 331.0, 68.0, 18.0 ],
 					"text" : "fade"
 				}
 
@@ -211,7 +211,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 674.5, 79.0, 68.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.5, 331.0, 68.0, 18.0 ],
+					"presentation_rect" : [ 111.5, 331.0, 68.0, 18.0 ],
 					"text" : "pitch"
 				}
 
@@ -250,7 +250,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 744.5, 110.0, 140.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 158.5, 362.0, 140.0, 20.0 ],
+					"presentation_rect" : [ 245.0, 362.0, 140.0, 20.0 ],
 					"text" : "5333.333",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
@@ -276,8 +276,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 674.5, 110.0, 116.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 86.5, 362.0, 116.0, 20.0 ],
-					"text" : "-0.833",
+					"presentation_rect" : [ 111.5, 362.0, 116.0, 20.0 ],
+					"text" : "-25.",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -2174,6 +2174,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2440,7 +2441,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 438.0, 245.0, 104.0, 68.0 ],
-					"text" : "4 gesture big piano dark",
+					"text" : "3 gesture small piano bright",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -2468,7 +2469,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 298.0, 245.0, 104.0, 68.0 ],
-					"text" : "14 texture deep forte bright",
+					"text" : "1 gesture small forte dark",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -2496,7 +2497,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 158.5, 245.0, 104.0, 68.0 ],
-					"text" : "5 gesture big forte dark",
+					"text" : "6 gesture big forte bright",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -2524,7 +2525,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 12.5, 245.0, 104.0, 68.0 ],
-					"text" : "13 texture deep piano bright",
+					"text" : "0 gesture small piano dark",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 

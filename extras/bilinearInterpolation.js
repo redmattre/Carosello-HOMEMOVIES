@@ -8,7 +8,7 @@ function bilinearInterpolation(x, y)
 {   
     var bottomLeft = [1., 0., 4000]; //pochi utenti, poca interazione
     var bottomRight = [0.8, -300., 20000]; //molti utenti, poca interazione
-    var topLeft = [1.5, -150., 1000]; //pochi utenti, molta interazione
+    var topLeft = [1.5, 150., 1000]; //pochi utenti, molta interazione
     var topRight = [1.25, 150, 4000]; //molti utenti, molta interazione
     
     var interpolatedValue = [];
