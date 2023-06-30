@@ -2399,7 +2399,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -5059,7 +5058,74 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-43" : [ "live.numbox", "live.numbox", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "audio_dsp.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bilinearInterpolation.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "convxfadeb.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "harm_gate_mono.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "interpolationLine.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pista.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rand_phase_mono.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "trackSelector.js",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

@@ -26,7 +26,7 @@ const gestureArea = document.getElementById("gesture-area");
 const manager = new Hammer.Manager(gestureArea);
 
 //gesture recognizers
-manager.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_ALL, threshold: 100 }));
+manager.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_ALL, threshold: 50 }));
 manager.add(new Hammer.Tap({ event: 'doubletap', taps: 2, threshold: 20, posThreshold: 100 }));
 
 //events
