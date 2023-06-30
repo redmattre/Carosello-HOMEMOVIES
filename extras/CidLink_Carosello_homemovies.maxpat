@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 264.0, 179.0, 90.0, 22.0 ],
+					"text" : "loadmess open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 264.0, 221.0, 51.0, 22.0 ],
+					"text" : "pcontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -94,7 +118,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.5, 297.0, 153.0, 35.0 ],
-					"text" : "stdout \"disconnect jikWu4mXd7_3LEH-AAAL\""
+					"text" : "terminated error dictionary u118003892"
 				}
 
 			}
@@ -267,6 +291,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 273.5, 282.0, 180.0, 282.0, 180.0, 321.0, 193.5, 321.0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -350,6 +389,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "audio_dsp.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "audioengine.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
@@ -412,9 +458,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "harm_gate_mono.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "interpolationLine.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras/forte_bright",
-				"patcherrelativepath" : "./forte_bright",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -440,6 +493,13 @@
 			}
 , 			{
 				"name" : "pista.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rand_phase_mono.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

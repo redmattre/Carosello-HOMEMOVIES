@@ -18,7 +18,7 @@ function assegnaPrimoVid() //da fare dopo aver preso la cartella (arriva da fuor
 	allVidslocked = [].concat(allVids); //fai una copia di tutto quello che 
 	outlet(0, primeVid + ".mov")
 	comparaVid();
-	post("init!" + "\n");
+	//post("init!" + "\n");
 }
 
 function catalogo() //funzione "loop" esterna, viene loopata dall'uzi fuori IMPORTANTE
@@ -34,7 +34,7 @@ function comparaVid()
 	var indiceInitVid = 0;
 
 	compArray = []; //resetta il comparray!
-	post("ho resettato il compArray" + "\n");
+	//post("ho resettato il compArray" + "\n");
 	
 	for (var i=0; i < nVideos; i++) //per tutta la lunghezza dell'Array allVids
 	{
@@ -99,7 +99,7 @@ function scegliNewVid()
 	{
 		bool_found = true;
 		found = numTags;
-		post("alla frutta!" + "\n")
+		//post("alla frutta!" + "\n")
 	}
 
 	if (!bool_found) 

@@ -8,6 +8,8 @@ randPhase (da -5 0 a 5) => per i due effetti capire se mettere dei gate out perc
 sempre engaged and interpolated
 */
 
+//CAMBIA I FADE TIME (+LUNGHI)
+
 function bilinearInterpolation(x, y) 
 {   
     var bottomLeft = [1., 0., 4000]; //pochi utenti, poca interazione

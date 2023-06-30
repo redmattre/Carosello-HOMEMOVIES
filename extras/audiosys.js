@@ -113,9 +113,9 @@ function checkEquilibrium()
     var storeToConfront = equilibrio;
     var gestures = keywordCounts[0];
     var textures = keywordCounts[1];
-    post("equilibrio prima del check = " + storeToConfront + "\n");
-    post("numero di gesture = " + gestures + "\n");
-    post("numero di texture = " + textures + "\n");
+    //post("equilibrio prima del check = " + storeToConfront + "\n");
+    //post("numero di gesture = " + gestures + "\n");
+    //post("numero di texture = " + textures + "\n");
 
     if (gestures > textures) 
     {
@@ -127,7 +127,7 @@ function checkEquilibrium()
             equilibrioTF = false;
         }
 
-        post("equilibrio dopo il check = " + equilibrio + "\n");
+        //post("equilibrio dopo il check = " + equilibrio + "\n");
 
     } else if (gestures < textures) {
         equilibrio = 1;
@@ -138,13 +138,13 @@ function checkEquilibrium()
             equilibrioTF = false;
         }
 
-        post("equilibrio dopo il check = " + equilibrio + "\n");
+        //post("equilibrio dopo il check = " + equilibrio + "\n");
 
     } else {
         equilibrio = 2;
         equilibrioTF = true;
 
-        post("equilibrio dopo il check = " + equilibrio + "\n");
+        //post("equilibrio dopo il check = " + equilibrio + "\n");
 
     }
 
