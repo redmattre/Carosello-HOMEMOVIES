@@ -378,7 +378,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-14",
-													"items" : [ " [2023-06-28 212158]-1.wav", ",", " [2023-06-28 212158]-2.wav", ",", " [2023-06-28 212158]-3.wav", ",", " [2023-06-28 212158]-4.wav", ",", " [2023-06-28 212158]-5.wav", ",", " [2023-06-28 212158].wav", ",", "due [2023-06-28 212158].wav", ",", "uno [2023-06-28 212158].wav" ],
+													"items" : [ " [2023-06-30 123637].wav", ",", "-1 [2023-06-30 123636].wav", ",", "-2 [2023-06-30 123636].wav", ",", "-3 [2023-06-30 123636].wav", ",", "-4 [2023-06-30 123636].wav", ",", "-5 [2023-06-30 123636].wav", ",", "due [2023-06-30 123637].wav", ",", "uno [2023-06-30 123637].wav" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -1097,7 +1097,7 @@
 					"patching_rect" : [ 879.5, 110.0, 140.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 362.0, 140.0, 20.0 ],
-					"text" : "4000.",
+					"text" : "5416.667",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -1123,7 +1123,7 @@
 					"patching_rect" : [ 809.5, 110.0, 116.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 111.5, 362.0, 116.0, 20.0 ],
-					"text" : "0.",
+					"text" : "-25.",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -1149,7 +1149,7 @@
 					"patching_rect" : [ 735.5, 110.0, 104.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.5, 362.0, 104.0, 20.0 ],
-					"text" : "1.",
+					"text" : "0.983",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -2122,8 +2122,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 199.0, 80.0, 22.0 ],
-									"text" : "prepend read"
+									"patching_rect" : [ 68.0, 199.0, 129.0, 22.0 ],
+									"text" : "prepend importreplace"
 								}
 
 							}
@@ -2142,7 +2142,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "15 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big forte bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture smal piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2399,6 +2399,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 2,
@@ -2427,8 +2428,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.0, 201.0, 80.0, 22.0 ],
-									"text" : "prepend read"
+									"patching_rect" : [ 70.0, 201.0, 129.0, 22.0 ],
+									"text" : "prepend importreplace"
 								}
 
 							}
@@ -2447,7 +2448,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "15 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big forte bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture smal piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2732,8 +2733,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.0, 194.0, 80.0, 22.0 ],
-									"text" : "prepend read"
+									"patching_rect" : [ 70.0, 194.0, 129.0, 22.0 ],
+									"text" : "prepend importreplace"
 								}
 
 							}
@@ -2752,7 +2753,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "15 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big forte bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture smal piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3047,8 +3048,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 76.0, 203.0, 80.0, 22.0 ],
-									"text" : "prepend read"
+									"patching_rect" : [ 76.0, 203.0, 129.0, 22.0 ],
+									"text" : "prepend importreplace"
 								}
 
 							}
@@ -3067,7 +3068,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "15 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big forte bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture smal piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3276,13 +3277,16 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-87",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 20.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 438.0, 245.0, 104.0, 20.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 438.0, 245.0, 104.0, 68.0 ],
+					"text" : "3 gesture big forte bright",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3301,13 +3305,16 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-86",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 20.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 298.0, 245.0, 104.0, 20.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 298.0, 245.0, 104.0, 68.0 ],
+					"text" : "21 texture sfondo forte dark",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3326,13 +3333,16 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-85",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 20.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 158.5, 245.0, 104.0, 20.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 158.5, 245.0, 104.0, 68.0 ],
+					"text" : "11 gesture small piano bright",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3351,13 +3361,16 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-84",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 20.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.5, 245.0, 104.0, 20.0 ],
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 12.5, 245.0, 104.0, 68.0 ],
+					"text" : "8 gesture big piano dark",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3790,7 +3803,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "15 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big forte bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture smal piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
