@@ -166,8 +166,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.083333333333485, 182.0, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 31.0, 80.0, 20.0 ],
-					"text" : "1",
+					"presentation_rect" : [ 177.0, 31.0, 29.5, 20.0 ],
+					"text" : "-",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -218,8 +218,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 380.083333333333485, 223.0, 251.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 83.0, 251.0, 20.0 ],
-					"text" : "07io4R4x5NjKLN3_AAAL",
+					"presentation_rect" : [ 6.0, 83.0, 248.0, 20.0 ],
+					"text" : "--------------------",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 

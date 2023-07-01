@@ -108,7 +108,7 @@ function scegliNewVid()
 		bool_found = true;
 	}
 
-	if (found === 2) { // <-----------------------------------qui puoi cambiare quanti tag compatibili
+	if (found === 3) { // <-----------------------------------qui puoi cambiare quanti tag compatibili
 		for (var i = 0; i < compArray.length; i++) {
 			if (compArray[i] === 0) {
 				vidPool.push(i);

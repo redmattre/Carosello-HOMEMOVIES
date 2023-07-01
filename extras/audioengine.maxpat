@@ -40,6 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 602.0, 931.0, 35.0, 22.0 ],
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 491.0, 913.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 497.0, 962.0, 69.0, 22.0 ],
+					"text" : "sfrecord~ 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -167,7 +203,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 155.25, 563.0, 29.5, 22.0 ],
+									"patching_rect" : [ 124.0, 561.0, 29.5, 22.0 ],
 									"text" : "1"
 								}
 
@@ -179,7 +215,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 126.0, 29.5, 22.0 ],
+									"patching_rect" : [ 46.0, 126.0, 29.5, 22.0 ],
 									"text" : "0"
 								}
 
@@ -191,7 +227,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 66.0, 100.0, 32.0, 22.0 ],
+									"patching_rect" : [ 62.0, 100.0, 32.0, 22.0 ],
 									"text" : "t b b"
 								}
 
@@ -203,7 +239,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 66.0, 155.0, 32.0, 22.0 ],
+									"patching_rect" : [ 62.0, 155.0, 32.0, 22.0 ],
 									"text" : "gate"
 								}
 
@@ -227,7 +263,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 66.0, 199.0, 32.0, 22.0 ],
+									"patching_rect" : [ 62.0, 199.0, 32.0, 22.0 ],
 									"text" : "t b b"
 								}
 
@@ -316,12 +352,49 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-10",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 189.0, 137.0, 54.0, 22.0 ],
+													"text" : "deferlow"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-9",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 189.0, 108.0, 58.0, 22.0 ],
+													"text" : "loadbang"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-6",
+													"linecount" : 18,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 257.0, 47.0, 50.0, 250.0 ],
+													"text" : "\"Macintosh HD:/Users/pierpaoloovarini/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras/audiogestures/\""
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-12",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 134.0, 119.0, 129.0, 22.0 ],
+													"patching_rect" : [ 31.0, 108.0, 129.0, 22.0 ],
 													"text" : "loadmess types WAVE"
 												}
 
@@ -378,7 +451,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-14",
-													"items" : [ " [2023-06-30 123637].wav", ",", "-1 [2023-06-30 123636].wav", ",", "-2 [2023-06-30 123636].wav", ",", "-3 [2023-06-30 123636].wav", ",", "-4 [2023-06-30 123636].wav", ",", "-5 [2023-06-30 123636].wav", ",", "due [2023-06-30 123637].wav", ",", "uno [2023-06-30 123637].wav" ],
+													"items" : [ " (Congela) [2023-06-30 210427]-1.wav", ",", " (Congela) [2023-06-30 210427]-2.wav", ",", " (Congela) [2023-06-30 210427]-3.wav", ",", " (Congela) [2023-06-30 210427]-4.wav", ",", " (Congela) [2023-06-30 210427]-5.wav", ",", " (Congela) [2023-06-30 210427].wav", ",", " (Congela) [2023-06-30 210428]-1.wav", ",", " (Congela) [2023-06-30 210428]-2.wav", ",", " (Congela) [2023-06-30 210428]-3.wav", ",", " (Congela) [2023-06-30 210428]-4.wav", ",", " (Congela) [2023-06-30 210428]-5.wav", ",", " (Congela) [2023-06-30 210428]-6.wav", ",", " (Congela) [2023-06-30 210428]-7.wav", ",", " (Congela) [2023-06-30 210428]-8.wav", ",", " (Congela) [2023-06-30 210428].wav", ",", " (Congela) [2023-06-30 210429]-1.wav", ",", " (Congela) [2023-06-30 210429]-2.wav", ",", " (Congela) [2023-06-30 210429]-3.wav", ",", " (Congela) [2023-06-30 210429].wav", ",", " [2023-06-30 123637].wav", ",", "-1 [2023-06-30 123636].wav", ",", "-2 [2023-06-30 123636].wav", ",", "-3 [2023-06-30 123636].wav", ",", "-4 [2023-06-30 123636].wav", ",", "-5 [2023-06-30 123636].wav", ",", "due [2023-06-30 123637].wav", ",", "uno [2023-06-30 123637].wav" ],
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -400,30 +473,6 @@
 												}
 
 											}
-, 											{
-												"box" : 												{
-													"id" : "obj-11",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "bang" ],
-													"patching_rect" : [ 31.0, 119.0, 90.0, 22.0 ],
-													"text" : "opendialog fold"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-10",
-													"maxclass" : "button",
-													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"parameter_enable" : 0,
-													"patching_rect" : [ 31.0, 82.0, 24.0, 24.0 ]
-												}
-
-											}
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
@@ -435,15 +484,9 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-11", 0 ],
+													"destination" : [ "obj-6", 0 ],
+													"midpoints" : [ 198.5, 169.0, 250.5, 169.0, 250.5, 36.0, 266.5, 36.0 ],
 													"source" : [ "obj-10", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
-													"destination" : [ "obj-13", 0 ],
-													"source" : [ "obj-11", 0 ]
 												}
 
 											}
@@ -464,6 +507,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
+													"midpoints" : [ 60.5, 190.5, 172.5, 190.5 ],
 													"source" : [ "obj-13", 1 ]
 												}
 
@@ -477,8 +521,16 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-13", 0 ],
+													"midpoints" : [ 266.5, 300.0, 141.0, 300.0, 141.0, 147.0, 40.5, 147.0 ],
+													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-10", 0 ],
-													"source" : [ "obj-55", 0 ]
+													"source" : [ "obj-9", 0 ]
 												}
 
 											}
@@ -712,7 +764,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 62.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 14.0, 40.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -725,7 +777,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 97.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 62.0, 40.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -752,6 +804,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
+									"midpoints" : [ 23.5, 355.5, 71.5, 355.5 ],
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -794,6 +847,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-63", 0 ],
+									"midpoints" : [ 71.5, 322.0, 48.0, 322.0, 48.0, 486.0, 71.5, 486.0 ],
 									"source" : [ "obj-61", 0 ]
 								}
 
@@ -801,6 +855,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-96", 0 ],
+									"midpoints" : [ 84.5, 284.5, 181.5, 284.5 ],
 									"source" : [ "obj-61", 1 ]
 								}
 
@@ -843,7 +898,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-70", 0 ],
-									"midpoints" : [ 164.75, 595.0, 207.125, 595.0, 207.125, 144.0, 75.5, 144.0 ],
+									"midpoints" : [ 133.5, 595.0, 244.125, 595.0, 244.125, 144.0, 71.5, 144.0 ],
 									"source" : [ "obj-80", 0 ]
 								}
 
@@ -1097,7 +1152,7 @@
 					"patching_rect" : [ 879.5, 110.0, 140.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 245.0, 362.0, 140.0, 20.0 ],
-					"text" : "5416.667",
+					"text" : "5000.",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -1123,7 +1178,7 @@
 					"patching_rect" : [ 809.5, 110.0, 116.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 111.5, 362.0, 116.0, 20.0 ],
-					"text" : "-25.",
+					"text" : "0.",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -1149,7 +1204,7 @@
 					"patching_rect" : [ 735.5, 110.0, 104.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.5, 362.0, 104.0, 20.0 ],
-					"text" : "0.983",
+					"text" : "1.",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -2142,7 +2197,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "22 texture deep piano dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "24 texture deep piano dark.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture deep piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "37 texture deep piano dark.wav", ",", "38 gesture small piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture big forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2447,7 +2502,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "22 texture deep piano dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "24 texture deep piano dark.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture deep piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "37 texture deep piano dark.wav", ",", "38 gesture small piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture big forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2752,7 +2807,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "22 texture deep piano dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "24 texture deep piano dark.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture deep piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "37 texture deep piano dark.wav", ",", "38 gesture small piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture big forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3067,7 +3122,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-23",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "22 texture deep piano dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "24 texture deep piano dark.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture deep piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "37 texture deep piano dark.wav", ",", "38 gesture small piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture big forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3276,16 +3331,15 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-87",
-					"linecount" : 5,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 438.0, 245.0, 104.0, 68.0 ],
-					"text" : "3 gesture big forte bright",
+					"presentation_rect" : [ 438.0, 245.0, 116.0, 20.0 ],
+					"text" : "---------",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3304,16 +3358,15 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-86",
-					"linecount" : 5,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 298.0, 245.0, 104.0, 68.0 ],
-					"text" : "21 texture sfondo forte dark",
+					"presentation_rect" : [ 298.0, 245.0, 116.0, 20.0 ],
+					"text" : "---------",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3332,16 +3385,15 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-85",
-					"linecount" : 5,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 158.5, 245.0, 104.0, 68.0 ],
-					"text" : "11 gesture small piano bright",
+					"presentation_rect" : [ 158.5, 245.0, 116.0, 20.0 ],
+					"text" : "---------",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3360,16 +3412,15 @@
 					"fontname" : "Public Pixel",
 					"gradient" : 1,
 					"id" : "obj-84",
-					"linecount" : 5,
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.5, 13.0, 104.0, 68.0 ],
+					"patching_rect" : [ 426.5, 13.0, 104.0, 32.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 12.5, 245.0, 104.0, 68.0 ],
-					"text" : "8 gesture big piano dark",
+					"presentation_rect" : [ 12.5, 245.0, 116.0, 20.0 ],
+					"text" : "---------",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -3627,7 +3678,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 603.0, 125.0, 346.0, 495.0 ],
+						"rect" : [ 603.0, 125.0, 464.0, 495.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3655,7 +3706,33 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 378.0, 82.0, 54.0, 22.0 ],
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"linecount" : 18,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 378.0, 118.0, 50.0, 250.0 ],
+									"text" : "\"Macintosh HD:/Users/pierpaoloovarini/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras/audiotracks/\""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -3697,7 +3774,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 70.5, 26.0, 58.0, 22.0 ],
+									"patching_rect" : [ 378.0, 46.0, 58.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -3802,7 +3879,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
-									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "26 texture sfondo piano dark.wav", ",", "28 texture sfondo piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture small forte bright.wav" ],
+									"items" : [ "0 gesture big forte bright.wav", ",", "1 texture deep forte dark.wav", ",", "10 gesture small piano bright.wav", ",", "11 gesture small piano bright.wav", ",", "12 gesture small piano dark.wav", ",", "13 gesture small piano dark.wav", ",", "14 texture deep forte bright.wav", ",", "16 texture deep forte bright.wav", ",", "17 texture deep forte dark.wav", ",", "18 texture sfondo forte bright.wav", ",", "19 texture sfondo forte bright.wav", ",", "2 gesture big forte bright.wav", ",", "20 texture sfondo forte dark.wav", ",", "21 texture sfondo forte dark.wav", ",", "22 texture deep piano dark.wav", ",", "23 texture sfondo piano bright.wav", ",", "24 texture deep piano dark.wav", ",", "25 texture sfondo piano bright.wav", ",", "26 texture sfondo piano bright.wav", ",", "27 texture sfondo piano dark.wav", ",", "28 texture deep piano dark.wav", ",", "29 gesture big piano bright.wav", ",", "3 gesture big forte bright.wav", ",", "30 gesture big forte dark.wav", ",", "31 gesture small piano dark.wav", ",", "32 gesture small forte bright.wav", ",", "33 gesture small forte dark.wav", ",", "34 gesture small piano bright.wav", ",", "35 texture deep forte dark.wav", ",", "36 texture deep piano bright.wav", ",", "37 texture deep piano dark.wav", ",", "38 gesture small piano bright.wav", ",", "4 gesture big forte dark.wav", ",", "5 gesture big piano bright.wav", ",", "6 gesture big piano dark.wav", ",", "7 gesture big piano dark.wav", ",", "8 gesture big piano dark.wav", ",", "9 gesture big forte bright.wav" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3872,13 +3949,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-13", 0 ],
-									"source" : [ "obj-11", 0 ]
 								}
 
 							}
@@ -3985,8 +4055,23 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"source" : [ "obj-55", 0 ]
+									"destination" : [ "obj-13", 0 ],
+									"midpoints" : [ 387.5, 378.0, 351.0, 378.0, 351.0, 149.0, 40.5, 149.0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-57", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -4682,7 +4767,23 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
+					"order" : 1,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -4716,6 +4817,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 1 ],
+					"order" : 1,
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"order" : 0,
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -4822,6 +4932,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
@@ -4938,7 +5055,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-106", 2 ],
 					"midpoints" : [ 202.5, 448.0, 431.833333333333314, 448.0 ],
-					"order" : 3,
+					"order" : 1,
 					"source" : [ "obj-9", 1 ]
 				}
 
@@ -4947,7 +5064,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-106", 1 ],
 					"midpoints" : [ 161.5, 448.0, 392.166666666666686, 448.0 ],
-					"order" : 3,
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -4974,7 +5091,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-108", 2 ],
 					"midpoints" : [ 202.5, 448.0, 711.833333333333371, 448.0 ],
-					"order" : 1,
+					"order" : 3,
 					"source" : [ "obj-9", 1 ]
 				}
 
@@ -4983,7 +5100,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-108", 1 ],
 					"midpoints" : [ 161.5, 448.0, 672.166666666666629, 448.0 ],
-					"order" : 1,
+					"order" : 3,
 					"source" : [ "obj-9", 0 ]
 				}
 
