@@ -1,3 +1,5 @@
+//ngrok subdomain command: ngrok http --domain=thiscouldbeustelecomando.ngrok.dev 7776
+
 autowatch = 1;
 outlets = 2;
 
