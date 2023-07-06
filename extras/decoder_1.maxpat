@@ -65,6 +65,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -101,7 +102,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -166,8 +166,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.083333333333485, 182.0, 41.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 31.0, 29.5, 20.0 ],
-					"text" : "-",
+					"presentation_rect" : [ 177.0, 31.0, 45.5, 20.0 ],
+					"text" : "0",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -664,7 +664,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.083333333333485, 255.0, 73.0, 22.0 ],
-					"text" : "swipedown"
+					"text" : "swipeup"
 				}
 
 			}
@@ -846,7 +846,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1270,28 +1270,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-12" : [ "live.text", "live.text", 0 ],
-			"obj-13" : [ "live.text[1]", "live.text", 0 ],
-			"obj-15" : [ "live.text[2]", "live.text", 0 ],
-			"obj-61" : [ "live.text[6]", "live.text", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "keysystem_1.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
