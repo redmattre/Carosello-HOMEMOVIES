@@ -1,6 +1,6 @@
 autowatch = 1;
 
-gvideoLength = 0.48;
+gvideoLength = 0.375;
 
 function vLength(a) 
 {
