@@ -40,23 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 445.5, 141.0, 55.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"precision" : 6
-					}
-,
-					"text" : "coll keys"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -71,7 +54,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 445.5, 214.5, 111.0, 74.0 ],
+					"patching_rect" : [ 420.5, 221.0, 111.0, 74.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -156,7 +139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.5, 297.0, 153.0, 49.0 ],
-					"text" : "stdout \"cmd 6rWXSJsDwhQujZNkAAAN swipeup 581\""
+					"text" : "stdout \"cmd g0CsCGwHv652DlneAAAN swipeup 515\""
 				}
 
 			}
