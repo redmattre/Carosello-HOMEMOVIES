@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 144.0, 483.0, 583.0, 313.0 ],
+		"rect" : [ 143.0, 254.0, 886.0, 313.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1217.666702508926392, 89.0, 55.0, 22.0 ],
-					"text" : "set 1080"
+					"patching_rect" : [ 1217.666702508926392, 89.0, 48.0, 22.0 ],
+					"text" : "set 360"
 				}
 
 			}
@@ -57,8 +57,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1162.666701316833496, 89.0, 55.0, 22.0 ],
-					"text" : "set 1920"
+					"patching_rect" : [ 1162.666701316833496, 89.0, 48.0, 22.0 ],
+					"text" : "set 640"
 				}
 
 			}
@@ -136,7 +136,7 @@
 					"patching_rect" : [ 547.166682481765747, 376.999995827674866, 86.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 425.333346009254456, 359.66667115688324, 29.5, 20.0 ],
-					"text" : "-",
+					"text" : "0",
 					"textcolor" : [ 1.0, 0.337254901960784, 0.337254901960784, 1.0 ]
 				}
 
@@ -225,7 +225,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 77.0, 514.0, 723.000009775161743, 280.666666626930237 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 611.0, 16.0, 693.66667115688324, 410.666669130325317 ],
+					"presentation_rect" : [ 611.0, 16.0, 556.333333730697632, 410.666669130325317 ],
 					"varname" : "audioengine",
 					"viewvisibility" : 1
 				}

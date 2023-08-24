@@ -68,8 +68,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 846.0, 199.0, 35.0, 22.0 ],
-					"text" : "1080"
+					"patching_rect" : [ 846.0, 199.0, 29.5, 22.0 ],
+					"text" : "360"
 				}
 
 			}
@@ -80,8 +80,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 787.0, 199.0, 35.0, 22.0 ],
-					"text" : "1920"
+					"patching_rect" : [ 787.0, 199.0, 29.5, 22.0 ],
+					"text" : "640"
 				}
 
 			}

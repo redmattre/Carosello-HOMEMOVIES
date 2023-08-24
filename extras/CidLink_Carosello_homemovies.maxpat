@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 656.0, 374.0, 656.0, 373.0 ],
+		"rect" : [ 655.0, 374.0, 656.0, 373.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -139,7 +139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.5, 297.0, 153.0, 49.0 ],
-					"text" : "stdout \"cmd g0CsCGwHv652DlneAAAN swipeup 515\""
+					"text" : "stdout \"cmd Fuv17hNvRx6oirIxAAAD swipedown 549\""
 				}
 
 			}
@@ -350,7 +350,6 @@
  ],
 		"parameters" : 		{
 			"obj-15::obj-43" : [ "live.numbox[2]", "live.numbox", 0 ],
-			"obj-5::obj-49::obj-43" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-5::obj-5::obj-12" : [ "live.text", "live.text", 0 ],
 			"obj-5::obj-5::obj-13" : [ "live.text[1]", "live.text", 0 ],
 			"obj-5::obj-5::obj-15" : [ "live.text[2]", "live.text", 0 ],
@@ -362,18 +361,6 @@
 			"parameter_overrides" : 			{
 				"obj-15::obj-43" : 				{
 					"parameter_longname" : "live.numbox[2]"
-				}
-,
-				"obj-5::obj-49::obj-43" : 				{
-					"parameter_initial" : 30,
-					"parameter_initial_enable" : 1,
-					"parameter_invisible" : 0,
-					"parameter_longname" : "live.numbox",
-					"parameter_modmode" : 0,
-					"parameter_range" : [ 0, 100 ],
-					"parameter_shortname" : "live.numbox",
-					"parameter_type" : 1,
-					"parameter_unitstyle" : 5
 				}
 
 			}
@@ -428,13 +415,6 @@
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "audio_dsp.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -500,13 +480,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "harm_gate_mono.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "interpolationLine.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
@@ -535,13 +508,6 @@
 			}
 , 			{
 				"name" : "pista.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rand_phase_mono.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Carosello-HOMEMOVIES/extras",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
